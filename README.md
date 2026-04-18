@@ -1,37 +1,37 @@
 # 2026-CAPSTONE
 
-## EMG 
+## I. EMG 
 
-### EMG software
+### 1. EMG software
 This consists of a complete EMG (Electromyography) signal acquisition and analysis system, including both firmware for data acquisition and a Python application for signal processing and visualization.
 
-#### Structure
+#### a. Structure
 - `/firmware` - Arduino-based firmware for EMG signal acquisition using ATmega328P
 - `/app` - Python application for EMG signal processing and visualization
 
-#### Prerequisites
+#### b. Prerequisites
 - PlatformIO (for firmware development)
 - Python 3.12 or higher (for the analysis application)
 - Arduino Nano or compatible board
 
-#### Installation
-1. **Firmware Setup**
+#### c. Installation
+i. **Firmware Setup**
    - Navigate to the `/firmware` directory
    - Use PlatformIO to build and upload the firmware
    - See the firmware README for detailed instructions
 
-2. **Application Setup**
+ii. **Application Setup**
    - Navigate to the `/app` directory
    - Create virture environment -> Install libraries and dependencies
    - Remember to `uv sync` in venv
 
-### Reference Data
+### 2. Reference Data
 **Data pape**r: https://www.nature.com/articles/s41597-025-05391-0
 
 
 **Data download**: https://springernature.figshare.com/articles/dataset/Comprehensive_Human_Locomotion_and_Electromyography_Dataset_Gait120/27677016
 
-#### Structure:
+#### a. Structure
 - `/1-bronze`: Output for process level 1
 - `/2-silver`: Output for process level 2
 - `/3-gold`: Output for process level 3 and validation
@@ -43,4 +43,10 @@ This consists of a complete EMG (Electromyography) signal acquisition and analys
 - `phase4_validation.py`: Final validation
 - `plot_reference_emg.py`: Plot the final processed reference data
 
-For final use, use the file `/3-gold/reference_emg.csv`
+#### b. Prequisite
+- Python 2.12 or higher (for analysis and process code)
+
+#### c. Implementation
+- Step 1: Use `read_gait_data` to export csv data files for later process
+- Step 2: Use `phase1_bronze.py` -> `phase2_silver.py` -> `phase3_gold.py` -> `phase4_validation.py` to process extracted data, the output reference data file is exported to `/3-gold/reference_emg.csv`
+- Step 3: Use `/3-gold/reference_emg.csv` for furthur investigation (use `plot_reference_emg.py` to plot data)
