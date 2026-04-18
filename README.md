@@ -1,4 +1,14 @@
 # 2026-CAPSTONE
+## Table of Contents
+- [I. EMG](#i-emg)
+  - [1. EMG software](#1-emg-software)
+    - [a. Structure](#a-structure)
+    - [b. Prerequisites](#b-prerequisites)
+    - [c. Installation](#c-installation)
+  - [2. Reference Data](#2-reference-data)
+    - [a. Structure](#a-structure-1)
+    - [b. Prequisite](#b-prequisite)
+    - [c. Implementation](#c-implementation)
 
 ## I. EMG 
 
