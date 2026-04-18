@@ -32,10 +32,10 @@ This consists of a complete EMG (Electromyography) signal acquisition and analys
 **Data download**: https://springernature.figshare.com/articles/dataset/Comprehensive_Human_Locomotion_and_Electromyography_Dataset_Gait120/27677016
 
 #### Structure:
-- `1-bronze`: Output for process level 1
-- `2-silver`: Output for process level 2
-- `3-gold`: Output for process level 3 and validation
-- `output`: Processed data to csv file
+- `/1-bronze`: Output for process level 1
+- `/2-silver`: Output for process level 2
+- `/3-gold`: Output for process level 3 and validation
+- `/output`: Processed data to csv file
 - `read_gait_data.m`: Process original extracted data from MATLAB file to csv file
 - `phase1_bronze.py`: Process csv data file level 1
 - `phase2_silver.py`: Process csv data file level 2
