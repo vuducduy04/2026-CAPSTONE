@@ -22,8 +22,8 @@ This consists of a complete EMG (Electromyography) signal acquisition and analys
 
 2. **Application Setup**
    - Navigate to the `/app` directory
-   - Install the Python dependencies
-   - See the application README for detailed instructions
+   - Create virture environment -> Install libraries and dependencies
+   - Remember to `uv sync` in venv
 
 ### Reference Data
 **Data pape**r: https://www.nature.com/articles/s41597-025-05391-0
