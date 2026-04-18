@@ -43,4 +43,4 @@ This consists of a complete EMG (Electromyography) signal acquisition and analys
 - `phase4_validation.py`: Final validation
 - `plot_reference_emg.py`: Plot the final processed reference data
 
-For final use, use the file `reference_emg.csv` in `3-gold`
+For final use, use the file `/3-gold/reference_emg.csv`
