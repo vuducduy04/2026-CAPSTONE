@@ -1,0 +1,29 @@
+============================================================
+PHASE 4 – VALIDATION
+============================================================
+Reference profiles loaded: 97 subjects  |  shape: (97, 101, 4)
+
+── A. Physiological Plausibility Check ──
+  VL: peak at 7% gait cycle (expected 0–25%)  [OK]
+  TA: peak at 3% gait cycle (expected 0–5% or 60–100%)  [OK]
+  ST: peak at 0% gait cycle (expected 0–15% or 80–100%)  [OK]
+  GM: peak at 41% gait cycle (expected 30–60%)  [OK]
+  Plausibility result: PASS
+
+── B. Intraclass Correlation Coefficient (ICC 3,k) ──
+  VL: ICC = 0.9047  [Excellent]
+  TA: ICC = 0.8114  [Good]
+  ST: ICC = 0.8146  [Good]
+  GM: ICC = 0.8901  [Good]
+
+── C. Visualizations ──
+  Saved: C:\Users\Vu Duc Duy\Desktop\Sem 8\CAPSTONE\Gait120\gold\plots\spaghetti_VL.png
+  Saved: C:\Users\Vu Duc Duy\Desktop\Sem 8\CAPSTONE\Gait120\gold\plots\spaghetti_TA.png
+  Saved: C:\Users\Vu Duc Duy\Desktop\Sem 8\CAPSTONE\Gait120\gold\plots\spaghetti_ST.png
+  Saved: C:\Users\Vu Duc Duy\Desktop\Sem 8\CAPSTONE\Gait120\gold\plots\spaghetti_GM.png
+  Saved: C:\Users\Vu Duc Duy\Desktop\Sem 8\CAPSTONE\Gait120\gold\plots\reference_band.png
+
+── D. Ridge Regression Functional Validation ──
+  Train size: 7777  |  Test size: 2020
+  Ridge (α=1) – R² = 0.5104  |  RMSE = 20.40%  |  NRMSE = 20.40%
+  → Model quality: MODERATE (R² ≥ 0.50)
